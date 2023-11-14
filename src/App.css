@@ -1,38 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter {
   display: flex;
-  flex-direction: column;
+}
+
+.filter__name {
+  font-size: 20px;
+}
+
+.filter__categories {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 8px 18px;
+  flex-wrap: wrap;
+  width: 510px;
+  justify-content: space-between;
+}
+
+.filter__button {
+  font-size: 16px;
+  width: 158px;
+  height: 39px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  outline: inherit;
+  border: none;
+}
+
+.log-container {
+  display: flex;
+  width: 100%;
+}
+
+.list {
+  min-width: 600px;
+  padding: 16px;
+}
+
+.log__wrapper {
+  list-style-type: none;
+  padding: 0;
+}
+
+.log__line {
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.3s;
+  list-style-type: none;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list__date {
+  text-align: left;
+  width: 145px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list__type {
+  width: 220px;
+  text-align: left;
+}
+
+.list__title {
+  width: 250px;
+  text-align: left;
+}
+
+
+
+
+.log__line.selected {
+  background-color: #f5f5f5;
+}
+
+.details__container {
+  width: 50%;
+}
+
+.details {
+  padding: 16px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tick-icon {
+  display: inline;
+  width: 32px;
+  height: 32px;
+}
+
+.thumbup-icon {
+  display: inline;
+  width: 25px;
+  height: 25px;
+  overflow:visible;
+  margin-right: 25px;
+}
+
+.details-arrow {
+  display: inline;
+  width: 13px;
+  height: 20px;
 }
